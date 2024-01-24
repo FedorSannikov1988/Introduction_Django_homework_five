@@ -54,6 +54,7 @@ class Order(models.Model):
     product = models.ManyToManyField(Product)
     total_amount_order = models.DecimalField(max_digits=20, decimal_places=10)
     date_and_time_placing_order = models.DateTimeField(auto_now_add=True)
+    #date_and_time_placing_order = models.DateTimeField(auto_now = False)
 
     def __str__(self):
 
